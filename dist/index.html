@@ -3,10 +3,35 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <title>Weather App</title>
   </head>
   <body>
+    <section>
+      Check Your City's Weather Forecast!
+    </section>
+    <div class="input">
+      <form>
+        <div class="form-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Country">
+          </div>
+        </div>
+      </form>
+      <button class="btn btn-primary">Get Weather</button>
+    </div>
+    <div class="weatherbox">
+      <p class="cityname"></p>
+      <p class="weather"></p>
+      <p class="temp"></p>
+      <p class="feelslike"></p>
+      <p class="maxtemp"></p>
+      <p class="mintemp"></p>
+      <p class="pressure"></p>
+      <p class="humidity"></p>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
