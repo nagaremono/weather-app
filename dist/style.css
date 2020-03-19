@@ -47,6 +47,12 @@ button {
   grid-template-rows: repeat(4, 1fr);
 }
 
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
 .cityname {
   grid-row: 1;
   grid-column: 1 / -1; 

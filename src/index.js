@@ -13,12 +13,14 @@ const weatherAppController = (function() {
 
     document.querySelector('.cityname').textContent = weatherObject.name
     document.querySelector('.weather').textContent =
-      weatherObject.weather.main + weatherObject.weather.description
-    document.querySelector('.temp').textContent = weatherObject.main.temp
+      weatherObject.weather.main + ':' + weatherObject.weather.description
+    document.querySelector('.temp').textContent = weatherObject.main.temp + 'F'
     document.querySelector('.feelslike').textContent =
-      weatherObject.main.feels_like
-    document.querySelector('.maxtemp').textContent = weatherObject.main.temp_max
-    document.querySelector('.mintemp').textContent = weatherObject.main.temp_min
+      weatherObject.main.feels_like + 'F'
+    document.querySelector('.maxtemp').textContent =
+      weatherObject.main.temp_max + 'F'
+    document.querySelector('.mintemp').textContent =
+      weatherObject.main.temp_min + 'F'
     document.querySelector('.pressure').textContent =
       weatherObject.main.pressure
     document.querySelector('.humidity').textContent =
